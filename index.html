@@ -336,7 +336,49 @@
                     <a href="#" class="disclaimer-link">Disclaimer <span>&rarr;</span></a>
                 </div>
 
-                <!-- Right Column: Form -->
+                <div class="reach-us-form-wrapper">
+    <form 
+        action="https://formspree.io/f/ks@legalbusinesses.org" 
+        method="POST" 
+        class="reach-us-form" 
+        id="consultationForm"
+    >
+        <div class="form-group">
+            <label>Name*</label>
+            <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+            <label>Phone*</label>
+            <input type="tel" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label>Email*</label>
+            <input type="email" name="_replyto" required>
+        </div>
+        <div class="form-group">
+            <label>Practice area*</label>
+            <select name="practice-area">
+                <option value="notary">Notary Services</option>
+                <option value="business">Business Licenses</option>
+                </select>
+        </div>
+        <div class="form-group">
+            <label>Case Description*</label>
+            <textarea name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-pill btn-primary btn-submit">
+            Get Your Free Consultation &rarr;
+        </button>
+    </form>
+
+    <div id="successMessage" style="display: none; text-align: left; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+        <h3 style="color: #fff;">Success!</h3>
+        <p style="color: #ccc;">Your message has been sent directly to our team. We will contact you shortly.</p>
+    </div>
+</div>
+
+                <!-- Right Column: Form 
                 <div class="reach-us-form-wrapper">
                     <form class="reach-us-form" id="consultationForm" onsubmit="return handleFormSubmit(event)">
                         <div class="form-group">
@@ -383,7 +425,7 @@
                             <p style="color: #ccc;">Your request has been generated. Please send the email that just opened to complete your request.</p>
                              <button onclick="location.reload()" style="background:none; border:1px solid #fff; color:#fff; padding:5px 10px; cursor:pointer; margin-top:10px;">Start Over</button>
                             </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -694,51 +736,33 @@
 
 
        
-function handleFormSubmit(event) {
-    // 1. Immediately kill the refresh
-    event.preventDefault();
-    
-    console.log("Button clicked, script starting...");
+var form = document.getElementById("consultationForm");
+  
+  async function handleSubmit(event) {
+    event.preventDefault(); // Stops the page from refreshing
+    var status = document.getElementById("successMessage");
+    var data = new FormData(event.target);
 
-    try {
-        // 2. Get the HTML elements
-        var formElement = document.getElementById('consultationForm');
-        var successElement = document.getElementById('successMessage');
-
-        // 3. Get values (using 'var' for widest browser compatibility)
-        var name = document.getElementById('name').value;
-        var phone = document.getElementById('phone').value;
-        var email = document.getElementById('email').value;
-        var practice = document.getElementById('practice-area').value;
-        var description = document.getElementById('case-description').value;
-
-        // 4. Build the Mailto link
-        var subject = encodeURIComponent("Free Consultation Request - " + name);
-        var body = encodeURIComponent(
-            "Name: " + name + "\r\n" +
-            "Phone: " + phone + "\r\n" +
-            "Email: " + email + "\r\n" +
-            "Practice Area: " + practice + "\r\n\r\n" +
-            "Description:\r\n" + description
-        );
-
-        // 5. Toggle Visibility
-        if (formElement && successElement) {
-            formElement.style.display = 'none';
-            successElement.style.display = 'block';
-        }
-
-        // 6. Open Email
-        window.location.href = "mailto:wegood.af@gmail.com?subject=" + subject + "&body=" + body;
-
-    } catch (err) {
-        console.error("Error in script:", err);
-        alert("Wait! Something went wrong: " + err.message);
-    }
-
-    // 7. Double-force the browser not to refresh
-    return false;
-}
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        // Hide form and show your success message
+        form.style.display = "none";
+        status.style.display = "block";
+      } else {
+        alert("Oops! There was a problem submitting your form");
+      }
+    }).catch(error => {
+      alert("Oops! There was a problem submitting your form");
+    });
+  }
+  
+  form.addEventListener("submit", handleSubmit)
 
 
         // =============================================
