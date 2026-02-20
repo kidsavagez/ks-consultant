@@ -338,7 +338,7 @@
 
                 <!-- Right Column: Form -->
                 <div class="reach-us-form-wrapper">
-                    <form class="reach-us-form">
+                    <form class="reach-us-form" id="consultationForm" onsubmit="return handleFormSubmit(event)">
                         <div class="form-group">
                             <label for="name">Name*</label>
                             <input type="text" id="name" name="name" required>
@@ -374,15 +374,15 @@
                         </div>
 
                         <button type="submit" class="btn-pill btn-primary btn-submit">
-            Get Your Free Consultation &rarr;
-        </button>
-    </form>
+                             Get Your Free Consultation &rarr;
+                            </button>
+                            </form>
 
-    <div id="successMessage" style="display: none; text-align: left; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 8px;">
-        <h3 style="color: #fff;">Thank You!</h3>
-        <p style="color: #ccc;">Your request has been generated. Please send the email that just opened to complete your request.</p>
-        <button onclick="location.reload()" style="background:none; border:1px solid #fff; color:#fff; padding:5px 10px; cursor:pointer; margin-top:10px;">Start Over</button>
-    </div>
+                            <div id="successMessage" style="display: none; text-align: left; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                             <h3 style="color: #fff;">Thank You!</h3>
+                            <p style="color: #ccc;">Your request has been generated. Please send the email that just opened to complete your request.</p>
+                             <button onclick="location.reload()" style="background:none; border:1px solid #fff; color:#fff; padding:5px 10px; cursor:pointer; margin-top:10px;">Start Over</button>
+                            </div>
                     </form>
                 </div>
             </div>
@@ -694,33 +694,44 @@
         // =============================================
 
 
-       document.getElementById('consultationForm').addEventListener('submit', function(e) {
-    e.preventDefault(); 
+       
+function handleFormSubmit(event) {
+    // 1. Stop the page from refreshing immediately
+    event.preventDefault();
 
-    // 1. Capture the data
+    // 2. Get the elements
+    const form = document.getElementById('consultationForm');
+    const success = document.getElementById('successMessage');
+
+    // 3. Get the values from the fields
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
     const practice = document.getElementById('practice-area').value;
     const description = document.getElementById('case-description').value;
 
-    // 2. Format the Email
+    // 4. Create the email content
     const subject = encodeURIComponent("Free Consultation Request - " + name);
     const body = encodeURIComponent(
         "Name: " + name + "\r\n" +
         "Phone: " + phone + "\r\n" +
         "Email: " + email + "\r\n" +
         "Practice Area: " + practice + "\r\n\r\n" +
-        "Message Details:\r\n" + description
+        "Description:\r\n" + description
     );
 
-    // 3. Show Success Message & Hide Form
-    document.getElementById('consultationForm').style.display = 'none';
-    document.getElementById('successMessage').style.display = 'block';
+    // 5. Hide the form and SHOW the success message
+    if (form && success) {
+        form.style.setProperty("display", "none", "important");
+        success.style.setProperty("display", "block", "important");
+    }
 
-    // 4. Trigger the Email App
-    window.location.href = `mailto:ks@legalbusinesses.org?subject=${subject}&body=${body}`;
-});
+    // 6. Open the email client
+    window.location.href = `mailto:wegood.af@gmail.com?subject=${subject}&body=${body}`;
+
+    return false; // Final backup to prevent refresh
+}
+
 
         // =============================================
         // INITIALIZE
