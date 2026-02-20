@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="KS Business & Legal Consulting - Strategic Legal & Business Advisory for Secure Investment in Indonesia">
+    <title>KS Business & Legal Consulting | Legal Clarity. Business Confidence.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            DEFAULT: '#722F37',
+                            dark: '#5C252C',
+                            light: '#8A3A44'
+                        },
+                        cream: '#FAF8F5',
+                        beige: '#F5F0EB',
+                        accent: '#C9A59A'
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo" style="color: #960019">KS <span style="color: #960019">Business & Legal
+                        Consulting<p style="font-size: 16px; text-align: center;">Legal Clarity.
+                            Business Confidence</p>
+                    </span></a>
+
+
+                <nav>
+                    <ul class="nav-links" id="navLinks">
+                        <!--   <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact" class="btn-pill btn-primary">Get In Touch</a></li> -->
+                    </ul>
+                </nav>
+
+                <!-- <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>-->
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tagline">The Safe and Proven</span>
+                <h1 class="hero-title">Strategic Legal & Business Advisory<span class="title-underline"></span></h1>
+                <p class="hero-description">
+                    Navigating legal complexities with precision and care. We provide comprehensive legal and business
+                    consulting services tailored to your unique needs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-pill btn-gold">Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <img src="assets/about-bg.jpg" alt="Law Cases Books">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p>
+                        Over the years, we have successfully handled a wide range of complex legal matters, offering
+                        both preventive legal advice and representation in disputes. Our approach combines deep legal
+                        expertise with clear communication, responsive service, and a genuine commitment to client
+                        success.
+                    </p>
+                    <p>
+                        With more than 10 years of experience and a forward-looking mindset, we remain a reliable legal
+                        partner for clients across Indonesia and beyond.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Business Years</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Satisfied Clients</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Cases Handled</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Practice Area</span>
+                <h2>How We Can Help</h2>
+                <p>Comprehensive legal and business solutions tailored to your needs</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Notary Services -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                        </svg>
+                    </div>
+                    <h4>Notary Services</h4>
+                    <p>Notarial and legal documentation services to ensure every agreement, deed, and corporate action
+                        complies with Indonesian law and carries strong legal standing.</p>
+                </div>
+
+                <!-- Business Licenses -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                        </svg>
+                    </div>
+                    <h4>Business Licenses</h4>
+                    <p>We manage business establishment and licensing processes, ensuring your company is legally
+                        operational and regulatory ready.</p>
+                </div>
+
+                <!-- Immigration -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h4>Immigration</h4>
+                    <p>End-to-end immigration assistance for investors, professionals, and families, handled efficiently
+                        and in full compliance with regulations.</p>
+                </div>
+
+                <!-- Architecture & Civil Contractor -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </div>
+                    <h4>Architecture & Civil Contractor</h4>
+                    <p>Integrated architectural and construction services supported by strong legal oversight , from
+                        planning to project execution.</p>
+                </div>
+
+                <!-- Due Diligence -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </div>
+                    <h4>Due Diligence</h4>
+                    <p>Comprehensive legal due diligence to identify risks, verify compliance, and support informed
+                        decision-making in business and property transactions.</p>
+                </div>
+
+                <!-- PBG & SLF -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                        </svg>
+                    </div>
+                    <h4>PBG & SLF</h4>
+                    <p>We assist property owners and developers in securing Persetujuan Bangunan Gedung (PBG) and
+                        Sertifikat Laik Fungsi (SLF) to ensure buildings comply with technical and regulatory
+                        requirements.</p>
+                </div>
+
+                <!-- Apostille -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                    </div>
+                    <h4>Apostille</h4>
+                    <p>We handle apostille processing to ensure your Indonesian documents are legally recognized abroad
+                        under international conventions.</p>
+                </div>
+
+                <!-- Intellectual Property Rights -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h4>Intellectual Property Rights (IPR)</h4>
+                    <p>We provide legal assistance for the registration and protection of intellectual property to
+                        safeguard your business identity and innovations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section 
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Client Testimonials</span>
+                <h2>We are honored to serve you</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p>Boost your product and service's credibility by adding testimonials from your clients. People
+                        love recommendations so feedbacks from others who've tried it are invaluable.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ES</div>
+                        <div>
+                            <div class="testimonial-name">Estelle Darcy</div>
+                            <div class="testimonial-role">Business Owner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p>Boost your product and service's credibility by adding testimonials from your clients. People
+                        love recommendations so feedbacks from others who've tried it are invaluable.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RM</div>
+                        <div>
+                            <div class="testimonial-name">Rina Martins</div>
+                            <div class="testimonial-role">Investor</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p>Boost your product and service's credibility by adding testimonials from your clients. People
+                        love recommendations so feedbacks from others who've tried it are invaluable.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">LP</div>
+                        <div>
+                            <div class="testimonial-name">Luis Peeters</div>
+                            <div class="testimonial-role">Entrepreneur</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Reach Us Section -->
+    <section class="reach-us" id="reach-us">
+        <div class="container">
+            <div class="reach-us-grid">
+                <!-- Left Column: Content -->
+                <div class="reach-us-content">
+                    <span class="section-tagline">Reach Us</span>
+                    <h2 class="reach-us-title">Schedule a Consultation with KS Business & Legal Consulting</h2>
+
+                    <ul class="reach-us-list">
+                        <li>
+                            <span class="list-line"></span>
+                            <p>We have eight attorneys ready to assist you.</p>
+                        </li>
+                        <li>
+                            <span class="list-line"></span>
+                            <p>We will return your initial call or email inquiry within one hour.</p>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="disclaimer-link">Disclaimer <span>&rarr;</span></a>
+                </div>
+
+                <!-- Right Column: Form -->
+                <div class="reach-us-form-wrapper">
+                    <form class="reach-us-form">
+                        <div class="form-group">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="practice-area">Practice area*</label>
+                            <select id="practice-area" name="practice-area">
+                                <option value="notary-services">Notary Services</option>
+                                <option value="business-licenses">Business Licenses</option>
+                                <option value="immigration">Immigration</option>
+                                <option value="architecture-construction">Architecture & Construction</option>
+                                <option value="due-diligence">Due Diligence</option>
+                                <option value="pbg-slf">PBG & SLF</option>
+                                <option value="apostille">Apostille</option>
+                                <option value="ipr">Intellectual Property Rights (IPR)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="case-description">Case Description*</label>
+                            <textarea id="case-description" name="case-description" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-pill btn-primary btn-submit">
+                            Get Your Free Consultation &rarr;
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">KS <span>Business & Legal Consulting</span></a>
+                    <p>Providing strategic legal and business advisory services with integrity, expertise, and a
+                        commitment to your success.</p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Notary Services</a></li>
+                        <li><a href="#services">Business Licenses</a></li>
+                        <li><a href="#services">Immigration</a></li>
+                        <li><a href="#services">Due Diligence</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <a href="tel:+62214567890">(021) 456-7890</a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <a href="mailto:hello@ksgconsultlaw.com">hello@ksgconsultlaw.com</a>
+                    </p>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 KS Business & Legal Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // =============================================
+        // SCROLL ANIMATIONS & INTERACTIONS
+        // =============================================
+
+        // Header scroll effect with glassmorphism
+        const header = document.getElementById('header');
+        let lastScrollY = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            lastScrollY = currentScrollY;
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // =============================================
+        // INTERSECTION OBSERVER FOR SCROLL ANIMATIONS
+        // =============================================
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -100px 0px',
+            threshold: 0.1
+        };
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+
+                    // If it's a stat card, trigger the counter animation
+                    if (entry.target.classList.contains('stat-card')) {
+                        animateStatCounter(entry.target);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Add animation classes to elements
+        function initScrollAnimations() {
+            // Section headers
+            document.querySelectorAll('.section-header').forEach((el, i) => {
+                el.classList.add('animate-on-scroll');
+                scrollObserver.observe(el);
+            });
+
+            // Service cards
+            document.querySelectorAll('.service-card').forEach((el, i) => {
+                el.classList.add('animate-on-scroll');
+                scrollObserver.observe(el);
+            });
+
+            // Testimonial cards
+            document.querySelectorAll('.testimonial-card').forEach((el, i) => {
+                el.classList.add('animate-on-scroll');
+                scrollObserver.observe(el);
+            });
+
+            // Stat cards
+            document.querySelectorAll('.stat-card').forEach((el, i) => {
+                el.classList.add('animate-on-scroll');
+                scrollObserver.observe(el);
+            });
+
+            // About section
+            const aboutImage = document.querySelector('.about-image');
+            const aboutContent = document.querySelector('.about-content');
+
+            if (aboutImage) {
+                aboutImage.classList.add('animate-fade-left');
+                scrollObserver.observe(aboutImage);
+            }
+
+            if (aboutContent) {
+                aboutContent.classList.add('animate-fade-right');
+                scrollObserver.observe(aboutContent);
+            }
+
+            // Footer
+            const footerGrid = document.querySelector('.footer-grid');
+            if (footerGrid) {
+                footerGrid.classList.add('animate-on-scroll');
+                scrollObserver.observe(footerGrid);
+            }
+        }
+
+        // =============================================
+        // ANIMATED STAT COUNTER
+        // =============================================
+
+        function animateStatCounter(statCard) {
+            const numberEl = statCard.querySelector('.stat-number');
+            if (!numberEl || numberEl.dataset.animated) return;
+
+            numberEl.dataset.animated = 'true';
+
+            const finalText = numberEl.textContent;
+            const finalNumber = parseInt(finalText.replace(/\D/g, ''));
+            const suffix = finalText.replace(/[0-9]/g, '');
+
+            const duration = 2500; // 2.5 seconds
+            const startTime = performance.now();
+
+            function easeOutExpo(t) {
+                return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+            }
+
+            function updateCounter(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easedProgress = easeOutExpo(progress);
+                const currentNumber = Math.floor(easedProgress * finalNumber);
+
+                numberEl.textContent = currentNumber + suffix;
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    numberEl.textContent = finalText;
+                }
+            }
+
+            numberEl.textContent = '0' + suffix;
+            requestAnimationFrame(updateCounter);
+        }
+
+        // =============================================
+        // BUTTON RIPPLE EFFECT
+        // =============================================
+
+        document.querySelectorAll('.btn-pill').forEach(button => {
+            button.addEventListener('click', function (e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+
+                ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${x}px;
+                    top: ${y}px;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    animation: ripple 0.6s ease-out;
+                    pointer-events: none;
+                `;
+
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Add ripple keyframes dynamically
+        const rippleStyle = document.createElement('style');
+        rippleStyle.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(rippleStyle);
+
+        // =============================================
+        // PARALLAX EFFECT FOR HERO (subtle)
+        // =============================================
+
+        const hero = document.querySelector('.hero');
+        if (hero) {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.scrollY;
+                const heroOverlay = hero.querySelector('.hero-overlay');
+                if (heroOverlay && scrolled < window.innerHeight) {
+                    heroOverlay.style.opacity = 0.85 + (scrolled / window.innerHeight) * 0.15;
+                }
+            });
+        }
+
+        // =============================================
+        // INITIALIZE
+        // =============================================
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initScrollAnimations();
+        });
+
+        // Fallback for already loaded page
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            initScrollAnimations();
+        }
+    </script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/62214567890" target="_blank" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        <span>Consult Now</span>
+    </a>
+</body>
+
+</html>
