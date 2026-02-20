@@ -336,21 +336,7 @@
                     <a href="#" class="disclaimer-link">Disclaimer <span>&rarr;</span></a>
                 </div>
 
-                <div class="reach-us-form-wrapper">
-    <form class="reach-us-form" id="consultationForm">
-        <button type="submit" class="btn-pill btn-primary btn-submit">
-            Get Your Free Consultation &rarr;
-        </button>
-    </form>
-
-    <div id="successMessage" style="display: none; text-align: center; padding: 40px; border: 1px solid #eee; border-radius: 10px;">
-        <h3 style="color: #2c3e50;">Thank You!</h3>
-        <p>Your request has been prepared. Please click "Send" in your email application to finish.</p>
-        <button onclick="location.reload()" class="btn-pill" style="cursor:pointer; margin-top:10px;">Send Another Request</button>
-    </div>
-</div>
-
-                <!-- Right Column: Form 
+                <!-- Right Column: Form -->
                 <div class="reach-us-form-wrapper">
                     <form class="reach-us-form">
                         <div class="form-group">
@@ -387,13 +373,18 @@
                             <textarea id="case-description" name="case-description" rows="4" required></textarea>
                         </div>
 
-                        <a href="mailto:ks@legalbusinesses.org?subject=Free%20Consultation%20Request" style="text-decoration: none;">
-                             <button type="button" class="btn-pill btn-primary btn-submit">
-                         Get Your Free Consultation &rarr;
-                         </button>
-                        </a>
+                        <button type="submit" class="btn-pill btn-primary btn-submit">
+            Get Your Free Consultation &rarr;
+        </button>
+    </form>
+
+    <div id="successMessage" style="display: none; text-align: left; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+        <h3 style="color: #fff;">Thank You!</h3>
+        <p style="color: #ccc;">Your request has been generated. Please send the email that just opened to complete your request.</p>
+        <button onclick="location.reload()" style="background:none; border:1px solid #fff; color:#fff; padding:5px 10px; cursor:pointer; margin-top:10px;">Start Over</button>
+    </div>
                     </form>
-                </div>-->
+                </div>
             </div>
         </div>
     </section>
